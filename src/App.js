@@ -1,11 +1,16 @@
 import "./styles.css";
 import "./mvp.css";
+import Valorant from "./Valorant.js";
 
-export default function App() {
+export default function App({valBundles}) {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      {valBundles.map((v, k) => (
+        <Valorant key={k} displayName={v.displayName} icon={v.displayIcon} />
+      ))}
+    </>
   );
 }
+
+
+
