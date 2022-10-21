@@ -2,6 +2,7 @@ import "./styles.css";
 import "./mvp.css";
 import Valorant from "./Valorant.js";
 
+
 export default function App({valBundles}) {
   return (
     <>
